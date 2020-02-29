@@ -1,0 +1,33 @@
+{
+  "name": "house-picker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node ./src/index.ts",
+    "telegram": "ts-node ./src/telegram/index.ts"
+  },
+  "author": "Pavel Bely",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cron": "^1.7.1",
+    "@types/mongodb": "^3.3.16",
+    "@types/node-telegram-bot-api": "^0.40.2",
+    "axios": "^0.19.2",
+    "cron": "^1.8.2",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^8.2.0",
+    "jsdom": "^16.1.0",
+    "log4js": "^6.1.1",
+    "mongodb": "^3.5.2",
+    "node-telegram-bot-api": "^0.40.0",
+    "puppeteer-core": "2.1.1",
+    "ts-node": "8.6.2",
+    "typescript": "3.7.5"
+  },
+  "devDependencies": {
+    "@types/jest": "25.1.2",
+    "@types/jsdom": "^12.2.4",
+    "@types/puppeteer-core": "2.0.0"
+  }
+}
