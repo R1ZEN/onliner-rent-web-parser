@@ -15,8 +15,9 @@ export function getApartmentPhone(document: Document): string[] {
     let selector = '#apartment-phones > ul';
     let el = document.querySelector(selector)
     let result = Array.from(el.children, ch => ch.textContent.trim());
-  
-    return [...new Set(result)].filter(Boolean);
+    let set = new Set(result);
+
+    return Array.from(set.values()).filter(Boolean);
   } catch (err) {
     return null;
   }

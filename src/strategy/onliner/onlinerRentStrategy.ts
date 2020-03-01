@@ -10,7 +10,7 @@ import { IBulkWriteError } from '../../database/mongodb.typing';
 
 interface IContext {
   db: Db,
-  colName?: string;
+  colName: string;
 }
 
 interface PartialApartment {
@@ -37,9 +37,9 @@ function getApartmentsPage(page: number): Promise<IOnlinerApartments> {
 
 const EXPIRE_DAYS_IN_SECONDS = 3*24*60*60;
 
-async function initOnlinerCollection(context: IContext) {
+async function initOnlinerCollection(context: IContext): Promise<{collection: Collection}> {
   let {db, colName} = context;
-  let collection;
+  let collection: Collection;
 
   try {
     collection = await db.createCollection(colName, {strict: true});

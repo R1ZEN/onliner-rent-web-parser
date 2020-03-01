@@ -1,5 +1,2 @@
-import { config } from 'dotenv';
-import { main } from './main';
-
-config();
-main();
+require('dotenv').config();
+require('./main').main();
