@@ -1,4 +1,4 @@
-# Web Parser для сайта [onliner.rent](https://ak.api.onliner.by/search/apartments/)
+# Web Parser для сайта [onliner.rent](https://r.onliner.by/ak/)
 
 Парсер собирает данные по аренде жилься с сайта onliner.rent, а так же с сайтов транспорта и метро.
 
